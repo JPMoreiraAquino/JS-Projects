@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+
+:root {
+    --Color-marcadagua:#282a36;
+}
+:root {
+    --black-color: #000;
+}
+
+   
+
+body {
+    background-color: var(--Color-marcadagua);
+    height: 100%;
+    margin: 0;
+    background-image: url(img/Obito.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    }
+
+ header { 
+     padding: 33px;
+     border-bottom: 1px solid var(--black-color);
+     background: var(--black-color);
+     margin: 0px;
+     text-align: center;
+ 
+ }
+ .links a {
+     text-align: right;
+         
+ }
+ .links a {
+     font-size: 20px;
+     color: white;
+     line-height: 30px;
+     margin: 0 16px;
+     text-decoration:none ;
+     font-family:'Orelega One', cursive;
+     text-align:center;
+
+
+ }
+ .links a:hover {
+     
+     text-align: center;
+     color: #333;
+     transition: color 300ms;
+ }
+#wrapper {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+
+}
+#wrapper img {
+    border-radius: 0px 0px 1000px 1000px ;
+    border: 5px solid var(--black-color);
+    margin-bottom: 32px;
+    margin: -5px;
+}
+#wrapper h1 {
+    font-size: 80px ;
+    line-height: 90px ;
+    font-weight:bold ;
+    
+    
+}
+#wrapper h2 {
+    font-size: 40px;
+    line-height: 30px; 
+    font-weight: bold;
+    margin-top: 7px;
+    opacity: 0.6;
+    color: white;
+   
+}
+.links p {
+    max-width: 500px;
+    margin: 32px;
+    font-size: 20px;
+    color: rgb(168, 167, 167);
+    
+
+}
+#links-footer a {
+  border-bottom: 1px solid var(--black-color)
+}
