@@ -121,7 +121,6 @@ body {
 
 }
 .card_image-container img {
-   
     width: 100%;
 }
 
@@ -161,7 +160,7 @@ body {
 
 }
 .modal {
-    background-color: var(--White--);
+    background-color: (--black-color);
     width: 90%;
     height: 90%;
     margin: 5vh auto;
@@ -170,7 +169,7 @@ body {
 
 }
 .modal .close-modal {
-    color:black;
+    color: var(--White--);
     position: absolute;
     right: 8px;
     top:8px; 
