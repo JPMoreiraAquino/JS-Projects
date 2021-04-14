@@ -1,10 +1,10 @@
 const express = require('express');
 const server = express()
 
-//server.get("/", function(req, res) {
-  //  return res.send("Hi!")
-//})
+server.get("/", function(req, res) {
+  return res.send("hi how is going!eeeeeeeeeeeeeeeeee")
+})
 
-server.listen(5000, function() {
-    console.log("server is running")
+server.listen(5000, function() { 
+  console.log("server is running")
 })
