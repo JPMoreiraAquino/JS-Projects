@@ -103,12 +103,14 @@ body {
 }
 
 .cards {
-    max-width: 900px ;
+    max-width: 1000px ;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     gap: 18px;
     margin-top: 0px;
+    cursor: pointer;
+    
     
     
 }
