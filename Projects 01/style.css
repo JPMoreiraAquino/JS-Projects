@@ -48,7 +48,7 @@ body {
  .links a:hover {
      
      text-align: center;
-     color:var(--Color-marcadagua);
+     color:var(--jp02120--);
      transition: color 300ms;
  }
 #wrapper {
@@ -59,8 +59,10 @@ body {
 #wrapper img {
     border-radius: 0px 0px 1000px 1000px ;
     border: 5px solid var(--black-color);
-    margin-bottom: 32px;
+    margin-bottom: 5px;
     margin: -5px;
+    width: 1000px;
+    
 }
 #wrapper h1 {
     font-size: 70px ;
@@ -75,22 +77,29 @@ body {
     font-size: 40px;
     line-height: 30px; 
     font-weight: bold;
-    margin-top: 7px;
+    margin-top: 20px;
     opacity: 0.6;
-    color:var(--White--);
-   
+    color:var(--White--);   
 }
+.links {
+    position:relative
+}
+
 .links p {
     max-width: 10px;
     margin-top: 10px;
     font-size: 20px;
     color: var(--White--);
+
     
 
 }
 #links-footer a {
-  border-bottom: 1px solid var(--black-color);
-  margin-bottom: 100%;
+  border-bottom: 0px solid var(--black-color);
+  margin-top: 10%;
+  position: absolute; 
+  margin-left: 10px;
+  
 }
 
 .cards {
@@ -139,12 +148,14 @@ body {
 
 }
 
-.modal-overl {
+.modal-overlay {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility:hidden ;
 
 }
 .modal {
@@ -152,8 +163,28 @@ body {
     width: 90%;
     height: 90%;
     margin: 5vh auto;
-
+    position: relative;
     
+
+}
+.modal .close-modal {
+    color:black;
+    position: absolute;
+    right: 8px;
+    top:8px; 
+    cursor: pointer;
+}
+.modal-overlay.active {
+    opacity: 1 ;
+    visibility: visible;
 }
 
+iframe {
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 4%;
+    
+
+}
 
