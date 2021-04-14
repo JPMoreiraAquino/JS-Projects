@@ -3,10 +3,11 @@
 
 :root {
     --Color-marcadagua:#282a36;
-}
-:root {
+    --White--: rgb(255, 255, 255);
     --black-color: #000;
+    --jp02120--:#333;
 }
+
 
    
 
@@ -14,7 +15,7 @@ body {
     background-color: var(--Color-marcadagua);
     height: 100%;
     margin: 0;
-    background-image: url(img/Obito.jpg);
+    background-image: url();
     background-repeat: repeat;
     background-size: cover;
     background-position: center; 
@@ -35,7 +36,7 @@ body {
  }
  .links a {
      font-size: 20px;
-     color: white;
+     color:var(--White--);
      line-height: 30px;
      margin: 0 16px;
      text-decoration:none ;
@@ -47,7 +48,7 @@ body {
  .links a:hover {
      
      text-align: center;
-     color: #333;
+     color:var(--Color-marcadagua);
      transition: color 300ms;
  }
 #wrapper {
@@ -62,9 +63,11 @@ body {
     margin: -5px;
 }
 #wrapper h1 {
-    font-size: 80px ;
+    font-size: 70px ;
     line-height: 90px ;
     font-weight:bold ;
+    color: var(--White--);
+    margin-top: 0px;
     
     
 }
@@ -74,17 +77,83 @@ body {
     font-weight: bold;
     margin-top: 7px;
     opacity: 0.6;
-    color: white;
+    color:var(--White--);
    
 }
 .links p {
-    max-width: 500px;
-    margin: 32px;
+    max-width: 10px;
+    margin-top: 10px;
     font-size: 20px;
-    color: rgb(168, 167, 167);
+    color: var(--White--);
     
 
 }
 #links-footer a {
-  border-bottom: 1px solid var(--black-color)
+  border-bottom: 1px solid var(--black-color);
+  margin-bottom: 100%;
 }
+
+.cards {
+    max-width: 900px ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 0px;
+    
+    
+}
+.card {
+    background-color:var(--black-color);
+
+
+
+}
+.card_image-container img {
+   
+    width: 100%;
+}
+
+
+.card_image-content,
+.card_info {
+     padding: 20px;
+     
+}
+.card_info {
+    color: var(--White--);
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+
+}
+.card_content {
+    font-size: 18px;
+    color: var(--White--);
+}
+.card_price {
+    background-color: var(--jp02120--);
+    border-radius: 20px;
+    text-align: center;
+    filter: brightness(70%);
+    padding: 5px 20px;
+
+}
+
+.modal-overl {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+}
+.modal {
+    background-color: var(--White--);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+
+    
+}
+
+
