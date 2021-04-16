@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+
+:root {
+    --Color-marcadagua:#282a36;
+    --White--: rgb(255, 255, 255);
+    --black-color: #000;
+    --jp02120--:#333;
+}
+
+
+   
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(https://images3.alphacoders.com/728/thumb-1920-728712.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    font-family: 'Orelega One', cursive;
+    }
+
+ header { 
+     padding: 33px;
+     border-bottom: 1px solid var(--black-color);
+     background: var(--black-color);
+     margin: 0px;
+     text-align: center;
+ 
+ }
+ .links a {
+     text-align: right;
+         
+ }
+ .links a {
+     font-size: 20px;
+     color:var(--White--);
+     line-height: 30px;
+     margin: 0 16px;
+     text-decoration:none ;
+     font-family:'Orelega One', cursive;
+     text-align:center;
+
+
+ }
+ .links a:hover {
+     
+     text-align: center;
+     color:var(--jp02120--);
+     transition: color 300ms;
+ }
+#wrapper {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+
+}
+#wrapper img {
+    border-radius: 0px 0px 1000px 1000px ;
+    border: 5px solid var(--black-color);
+    margin-bottom: 5px;
+    margin: -5px;
+    width: 1000px;
+    
+}
+#wrapper h1 {
+    font-size: 70px ;
+    line-height: 90px ;
+    font-weight:bold ;
+    color: var(--White--);
+    margin-top: 0px;
+    
+    
+}
+#wrapper h2 {
+    font-size: 40px;
+    line-height: 30px; 
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 1;
+    color:var(--White--);   
+}
+.links {
+    position:relative
+}
+
+.links p {
+    max-width: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--White--);
+
+    
+
+}
+#links-footer a {
+  border-bottom: 0px solid var(--black-color);
+  margin-top: 10%;
+  position: absolute; 
+  margin-left: 10px;
+  
+}
+
+.cards {
+    max-width: 1000px ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 18px;
+    margin-top: 0px;
+    cursor: pointer;
+    
+    
+    
+}
+.card {
+    background-color:var(--black-color);
+    display: grid;
+
+
+
+}
+.card_image-container img {
+   
+    width: 100%;
+}
+
+
+.card_image-content,
+.card_info {
+     padding: 20px;
+     
+}
+.card_info {
+    color: var(--White--);
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    align-items: center;
+
+}
+.card_content {
+    font-size: 18px;
+    color: var(--White--);
+}
+.card_price {
+    background-color: var(--jp02120--);
+    border-radius: 20px;
+    text-align: center;
+    filter: brightness(70%);
+    padding: 5px 20px;
+
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility:hidden ;
+
+}
+.modal {
+    background-color: var(--black-color);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    
+
+}
+.modal .close-modal {
+    color: var(--White--);
+    position: absolute;
+    right: 8px;
+    top:8px; 
+    cursor: pointer;
+}
+.modal-overlay.active {
+    opacity: 1 ;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 4%;
+}
+
+.featured-wrapper.card_image-container {
+    position: relative;
+}
+
+.featured {
+    color: var(--White--);
+    font-size: 20px;
+    font-family: 'Orelega One', cursive;
+    position: absolute;
+    right: 8px;
+    padding: 5px 12px;
+    border-radius: 20px ;
+    background-color: blue;
+    top: -10px;
+
+}
+
+.video {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.card_Video-container {
+    position: relative;
+    padding-top: 66%;
+
+
+}
