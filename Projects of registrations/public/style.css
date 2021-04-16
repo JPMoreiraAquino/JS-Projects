@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+
+
+
 
 
 :root {
@@ -9,17 +12,18 @@
 }
 
 
-   
+
 
 body {
     height: 100%;
     margin: 0;
-    background-image: url(https://images3.alphacoders.com/728/thumb-1920-728712.jpg);
+    background-image: url(https://cdn.ome.lt/i3W-l7TGBnj9hClQhmeKuDMsWeA=/1200x630/smart/uploads/theme/images/hulk-tema.png);
     background-repeat: repeat;
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
-    font-family: 'Orelega One', cursive;
+    font-family: 'Zilla Slab Highlight', cursive;
+    color:var(--black-color);
     }
 
  header { 
@@ -28,22 +32,27 @@ body {
      background: var(--black-color);
      margin: 0px;
      text-align: center;
+     box-sizing: border-box;
  
  }
- .links a {
-     text-align: right;
-         
+ 
+ p{
+     font-size: 17px;
  }
+         
+
  .links a {
-     font-size: 20px;
-     color:var(--White--);
+     font-size: 22px;
+     color:darkred;
      line-height: 30px;
      margin: 0 16px;
      text-decoration:none ;
-     font-family:'Orelega One', cursive;
+     font-family:'Zilla Slab Highlight', cursive;
      text-align:center;
 
-
+    }
+ .linsk a.active {
+     margin-left: 30px;
  }
  .links a:hover {
      

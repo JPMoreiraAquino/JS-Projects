@@ -1,42 +1,24 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const routes = require("./routes")
+const route = require("./route")
 
 const server = express();
 
 server.use(express.static('public'));
+server.use(route)
 
-server.set("view engine", "njk",);
+
+server.set("view engine", "njk",)
+
 nunjucks.configure("views", {
   express: server,
   autoescape: false,
   noCache: true,
 });
 
-server.get("/portfolio", function(req, res){
-  return res.render("portfolio", {items: videos});
-
-});
-
-server.get("/video", function(req, res) {
-  const id = req.query.id
-
-  const video = videos.find(function(video){
-    return video.id == id
-
-  })
-
-  if (!video) {
-    return res.render("Video not found!")
-  }
-  
-  return res.render("video", {item:video})
 
 
-})
-
-
-server.listen(2020, function() {
+server.listen(8080, function() {
   console.log("Server is running");
 
 })
