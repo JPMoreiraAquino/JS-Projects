@@ -63,7 +63,6 @@ body {
     left: 0%;
     bottom: -4px;
     
-
 }
 
 .links a:hover::after {
@@ -148,10 +147,23 @@ body {
 }
 .card {
     background-color:var(--black-color);
-    display: grid;
+    width: 800px;
+    height: 400px;
+    
+    margin: 65px auto;
 
-
-
+}
+.avatar {
+    background-image: url(https://www.superprof.com.br/imagens/anuncios/professor-home-fui-atleta-treinador-lutas-artes-marciais-importantes-equipes-como-guigo-jiu-jitsu-academia-black-trunks-demian-maia.jpg);
+    width: 400px;
+    height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; 
+    
+}
+.details {
+    font-size: 18px;
 }
 .card_image-container img {
    
