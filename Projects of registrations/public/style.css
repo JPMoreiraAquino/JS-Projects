@@ -9,6 +9,8 @@
     --White--: rgb(255, 255, 255);
     --black-color: #000;
     --jp02120--:#333;
+    --darkred--: rgb(139, 0, 0);
+    --Grennhulk-- :#CADA3C;
 }
 
 
@@ -43,22 +45,43 @@ body {
 
  .links a {
      font-size: 22px;
-     color:darkred;
+     color: var(--darkred--);
      line-height: 30px;
      margin: 0 16px;
      text-decoration:none ;
      font-family:'Zilla Slab Highlight', cursive;
      text-align:center;
+     position: relative;
 
-    }
+}
+.links a::after { 
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--Grennhulk--);
+    position:absolute;
+    left: 0%;
+    bottom: -4px;
+    
+
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 300ms cubic-bezier(1, 0.2, 0.65, 0.89);
+
+   
+
+}
  .linsk a.active {
-     margin-left: 30px;
+     font-weight: bold;
+     color:var(--darkred--)
  }
  .links a:hover {
      
      text-align: center;
      color:var(--jp02120--);
-     transition: color 300ms;
+     transition: color 300ms ease-in-out 300ms;
  }
 #wrapper {
     text-align: center;
