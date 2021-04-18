@@ -30,8 +30,8 @@ body {
      text-align: center;
  
  }
- .links a {
-     text-align: right;
+ .links a + a {
+     margin-left: 32px;
          
  }
  .links a {

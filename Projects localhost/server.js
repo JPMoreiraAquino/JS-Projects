@@ -54,7 +54,7 @@ server.get("/video", function(req, res) {
 })
 
 
-server.listen(5050, function() {
+server.listen(8080, function() {
   console.log("Server is running");
 
 })
