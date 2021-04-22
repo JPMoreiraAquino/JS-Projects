@@ -45,7 +45,7 @@ body {
 
  .links a {
      font-size: 22px;
-     color: var(--darkred--);
+     color: var(--White--);
      line-height: 30px;
      margin: 0 16px;
      text-decoration:none ;
@@ -74,7 +74,7 @@ body {
 }
  .linsk a.active {
      font-weight: bold;
-     color:var(--darkred--)
+     color:var(--White--)
  }
  .links a:hover {
      
@@ -149,6 +149,9 @@ body {
     opacity: 0;
     width: 800px;
     height: 400px;
+    background-color: #000;
+    color: var(--White--);
+    border-radius: 19px;
     
     margin: 65px auto;
     box-shadow: 0px 2px 6px 2px var(--Grennhulk--);
@@ -173,6 +176,7 @@ body {
 
     }
 }
+
 
 
   
@@ -283,6 +287,66 @@ iframe {
     position: relative;
     padding-top: 66%;
    
+
+
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item{
+    border-bottom: 1px solid var(--White--);
+    padding: 8px 0;
+    color: var(--White--);
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details .item div:nth-child(1){
+
+    color: #aaa; ;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+
+}
+
+
+.details .item div:nth-child(2){
+    color: white;
+    line-height: 20px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+
+}
+
+
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: wheat
+
+}
+
+.details .item span {
+    padding: 1px 16px ;
+    background-image: url(https://cdn.ome.lt/i3W-l7TGBnj9hClQhmeKuDMsWeA=/1200x630/smart/uploads/theme/images/hulk-tema.png);
+    border-radius: 16px;
+    color: black;
+    margin-right:6px;
+    margin-top: 6px;
+    display:inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    
 
 
 }
