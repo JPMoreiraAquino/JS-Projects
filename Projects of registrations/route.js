@@ -12,11 +12,12 @@ route.get('/', function(req, res){
 })
 
 route.get('/members', function(req, res){
-    return res.send("members")
+    return res.render("instructors/members")
 })
 
 
-route.get('/instructors/create', function(req, res){    return res.render("instructors/create")
+route.get('/instructors/create', function(req, res){
+    return res.render("instructors/create")
 
 })
 
