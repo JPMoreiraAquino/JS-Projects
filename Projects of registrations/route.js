@@ -18,8 +18,12 @@ route.get('/members', function(req, res){
 
 route.get('/instructors/create', function(req, res){
     return res.render("instructors/create")
-
 })
+
+route.post("/instructors", function(req, res){
+    return res.send("Rescebido")
+})
+
 
 
 

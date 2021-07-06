@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+
+
+
+
+:root {
+    --Color-marcadagua:#282a36;
+    --White--: rgb(255, 255, 255);
+    --black-color: #000;
+    --jp02120--:#333;
+    --darkred--: rgb(139, 0, 0);
+    --Grennhulk-- :#192219;
+}
+
+
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(https://cdn.ome.lt/i3W-l7TGBnj9hClQhmeKuDMsWeA=/1200x630/smart/uploads/theme/images/hulk-tema.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    font-family: 'Zilla Slab Highlight', cursive;
+    color:var(--black-color);
+    }
+
+ header { 
+     padding: 33px;
+     border-bottom: 1px solid var(--black-color);
+     background: var(--black-color);
+     margin: 0px;
+     text-align: center;
+     box-sizing: border-box;
+ 
+ }
+ 
+ p{
+     font-size: 17px;
+ }
+         
+
+ .links a {
+     font-size: 22px;
+     color: var(--White--);
+     line-height: 30px;
+     margin: 0 16px;
+     text-decoration:none ;
+     font-family:'Zilla Slab Highlight', cursive;
+     text-align:center;
+     position: relative;
+
+}
+.links a::after { 
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--Grennhulk--);
+    position:absolute;
+    left: 0%;
+    bottom: -4px;
+    
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 300ms cubic-bezier(1, 0.2, 0.65, 0.89);
+
+   
+
+}
+ .linsk a.active {
+     font-weight: bold;
+     color:var(--White--)
+ }
+ .links a:hover {
+     
+     text-align: center;
+     color:var(--jp02120--);
+     transition: color 300ms ease-in-out 300ms;
+ }
+#wrapper {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+
+}
+#wrapper img {
+    border-radius: 0px 0px 1000px 1000px ;
+    border: 5px solid var(--black-color);
+    margin-bottom: 5px;
+    margin: -5px;
+    width: 1000px;
+    
+}
+#wrapper h1 {
+    font-size: 70px ;
+    line-height: 90px ;
+    font-weight:bold ;
+    color: var(--White--);
+    margin-top: 0px;
+    
+    
+}
+#wrapper h2 {
+    font-size: 40px;
+    line-height: 30px; 
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 1;
+    color:var(--White--);   
+}
+.links {
+    position:relative
+}
+
+.links p {
+    max-width: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--White--);
+
+    
+
+}
+#links-footer a {
+  border-bottom: 0px solid var(--black-color);
+  margin-top: 10%;
+  position: absolute; 
+  margin-left: 10px;
+  
+}
+
+.cards {
+    max-width: 1000px ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 18px;
+    margin-top: 0px;
+    cursor: pointer;
+    
+    
+    
+}
+.card {
+    opacity: 0;
+    width: 800px;
+    height: 400px;
+    background-color: #000;
+    color: var(--White--);
+    border-radius: 19px;
+    
+    margin: 65px auto;
+    box-shadow: 0px 2px 6px 2px var(--Grennhulk--);
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    animation-name: jp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards
+      
+}
+
+@keyframes jp {
+    from {
+       
+        transform: translateY(60px);
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+
+  
+    
+
+
+
+
+.details {
+    font-size: 18px;
+}
+.card_image-container img {
+   
+    width: 100%;
+}
+
+
+.card_image-content,
+.card_info {
+     padding: 20px;
+     
+}
+.card_info {
+    color: var(--White--);
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    align-items: center;
+
+}
+.card_content {
+    font-size: 18px;
+    color: var(--White--);
+}
+.card_price {
+    background-color: var(--jp02120--);
+    border-radius: 20px;
+    text-align: center;
+    filter: brightness(70%);
+    padding: 5px 20px;
+
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility:hidden ;
+
+}
+.modal {
+    background-color: var(--black-color);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    
+
+}
+.modal .close-modal {
+    color: var(--White--);
+    position: absolute;
+    right: 8px;
+    top:8px; 
+    cursor: pointer;
+}
+.modal-overlay.active {
+    opacity: 1 ;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 4%;
+}
+
+.featured-wrapper.card_image-container {
+    position: relative;
+}
+
+.featured {
+    color: var(--White--);
+    font-size: 20px;
+    font-family: 'Orelega One', cursive;
+    position: absolute;
+    right: 8px;
+    padding: 5px 12px;
+    border-radius: 20px ;
+    background-color: blue;
+    top: -10px;
+
+}
+
+.video {
+    margin: 0 auto;
+    max-width: 100px;
+    height: 400px;
+    background-color:var(--White--);
+
+    
+}
+
+.card_Video-container {
+    position: relative;
+    padding-top: 66%;
+   
+
+
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item{
+    border-bottom: 1px solid var(--White--);
+    padding: 8px 0;
+    color: var(--White--);
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details .item div:nth-child(1){
+
+    color: #aaa; ;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+
+}
+
+
+.details .item div:nth-child(2){
+    color: white;
+    line-height: 20px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+
+}
+
+
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: wheat
+
+}
+
+.details .item span {
+    padding: 1px 16px ;
+    background-image: url(https://cdn.ome.lt/i3W-l7TGBnj9hClQhmeKuDMsWeA=/1200x630/smart/uploads/theme/images/hulk-tema.png);
+    border-radius: 16px;
+    color: black;
+    margin-right:6px;
+    margin-top: 6px;
+    display:inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    
+
+
+}
